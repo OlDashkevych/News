@@ -1,0 +1,17 @@
+<li class="article">
+  <img class="articleImage"
+    src="{{#if image.url}}{{image.url}}{{else}}http://ukrainepravo.com/upload/iblock/858/858784f1c81237140d8f4ce454ecbf3e.jpg{{/if}}"
+    alt="">
+
+  <h2 class="articleTitle">{{title}}</h2>
+
+  <span class="articleSectionInfo">{{section}}</span>
+  <p class="articleText">{{abstract}}</p>
+  <div class="tagsContainer">{{#each tags}}<span class="articleTag">{{this}}</span>{{/each}}</div>
+  <div class="btn-wrapper">
+    <button class="articleButton">Load more
+      <a class="articleLink" rel="noopener noreferrer" target="_blank" href="{{url}}"></a>
+    </button>
+  </div>
+
+</li>
