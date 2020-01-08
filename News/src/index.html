@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>News</title>
   <link rel="shortcut icon" type="image/png" href="./images/favicon/favicon.png" />
-  
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,8 +30,7 @@
     </nav>
     <!-- HEADER -->
     <header class="header">
-      <a href="#"><img src="images/logo.png" class="logo" /></a>
-      <img src="images/nav-arrow.png" class="arrow-home arrow" />
+      <a href="#"><img src="images/logo.png" class="logo bounce" /></a>
       <form class="search-form">
         <input type="text" name="keyword" class="search-input" placeholder="Search..." />
         <button type="submit" class="submit-btn" />
@@ -46,8 +45,8 @@
           <img src="./slides/02.jpg">
           <img src="./slides/03.jpg">
         </div>
-        <button class="prev"></button>
-        <button class="next"></button>
+        <button class="sliderBtn prev"></button>
+        <button class="sliderBtn next"></button>
       </div>
 
 
@@ -63,59 +62,59 @@
     <!-- ENDS MAIN -->
   </div>
   <!-- ENDS WRAPPER -->
+  <button class="scrollTopButton"></button>
   <!-- FOOTER -->
   <div class="footer">
     <div class="footer-wrapper">
       <ul class="follow">
-        <li>
-          <p>Follow us: </p>
-        </li>
-        <li><a href="#"><img src="images/twitter.png" alt="" /></a></li>
-        <li><a href="#"><img src="images/facebook.png" alt="" /></a></li>
-        <li><a href="#"><img src="images/linkedln.png" alt="" /></a></li>
-        <li><a href="#"><img src="images/rss.png" alt="" /></a></li>
+        <li class="followItem "><span class="footerLinksInfo">Follow us: </span></li>
+        <li class="followItem"><a href="#"><img src="images/twitter.png" alt="" /></a></li>
+        <li class="followItem"><a href="#"><img src="images/facebook.png" alt="" /></a></li>
+        <li class="followItem"><a href="#"><img src="images/linkedln.png" alt="" /></a></li>
+        <li class="followItem"><a href="#"><img src="images/rss.png" alt="" /></a></li>
       </ul>
       <div class="footer-cols">
-        <div>
-          <ul>
-            <li><a href="#" class="custom">Skins</a></li>
-            <li><a href="#">Spring</a></li>
-            <li><a href="#">Summer</a></li>
-            <li><a href="#">Autumn</a></li>
-            <li><a href="#">Winter</a></li>
+        <div class="footer-col">
+          <ul class="footer-col-list">
+            <li class="footer-col-list-item "><a class="followLinkTop footer-col-list-item-link" href="#">Skins</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Spring</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li><a href="#" class="custom">Gallery</a></li>
-            <li><a href="#">Spring</a></li>
-            <li><a href="#">Summer</a></li>
-            <li><a href="#">Autumn</a></li>
-            <li><a href="#">Winter</a></li>
+        <div class="footer-col">
+          <ul class="footer-col-list">
+            <li class="footer-col-list-item "><a class=" followLinkTop footer-col-list-item-link" href="#">Gallery</a>
+            </li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Spring</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li><a href="#" class="custom">Blog</a></li>
-            <li><a href="#">Spring</a></li>
-            <li><a href="#">Summer</a></li>
-            <li><a href="#">Autumn</a></li>
-            <li><a href="#">Winter</a></li>
+        <div class="footer-col">
+          <ul class="footer-col-list">
+            <li class="footer-col-list-item "><a class="followLinkTop footer-col-list-item-link" href="#">Blog</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Spring</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
           </ul>
         </div>
-        <div class="last">
-          <ul>
-            <li><a href="#" class="custom">Text Styles</a></li>
-            <li><a href="#">Spring</a></li>
-            <li><a href="#">Summer</a></li>
-            <li><a href="#">Autumn</a></li>
-            <li><a href="#">Winter</a></li>
+        <div class="last footer-col">
+          <ul class="footer-col-list">
+            <li class="footer-col-list-item "><a class="followLinkTop footer-col-list-item-link" href="#">Text
+                Styles</a></li>
+            <li class="footer-col-list-item"><a class=" footer-col-list-item-link" href="#">Spring</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
+            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="legal">&copy; Copyright 2012 <a href="#">Company Name</a> All Rights Reserved | Website Template By <a
-            target="_blank" href="http://www.luiszuno.com">luiszuno</a></p>
+        <span class="footer-bottom-info">Created by Dashkevych</span>
       </div>
     </div>
   </div>
