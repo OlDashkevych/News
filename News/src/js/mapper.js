@@ -10,13 +10,13 @@ const mapper = items => {
       ...etc
     }) => ({
       title,
-      abstract: abstract.slice(0, 200) + '...',
+      abstract: abstract.slice(0, 200) + "...",
       url,
-      image: image[4],
+      image: image[0],
       tags: tags.slice(0, 3),
       section,
-      ...etc,
-    }),
+      ...etc
+    })
   );
 };
 export default mapper;

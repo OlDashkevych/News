@@ -1,0 +1,14 @@
+/* HEADER ------------------------------------------------------------*/
+.header {
+    position: relative;
+    top: -54px;
+    height: 212px;
+    width: 100%;
+    background: url(../../images/spring/top-bg.png) no-repeat;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+  }

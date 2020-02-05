@@ -9,7 +9,7 @@ const articleList = document.querySelector(".articleList");
 const fetchArticles = () => {
   API.getItems()
     .then(({ data }) => createMarkup(mapper(data.results)))
-    .catch(err => console.log(err))
+    .catch(err => console.error(err))
     .finally(() => {
       spinnerBox.innerHTML = "";
     });
