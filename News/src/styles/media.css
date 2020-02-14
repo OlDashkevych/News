@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  .wrapper {
+    width: 720px;
+  }
+  .header {
+    background: none;
+  }
+  .slider {
+    display: none;
+  }
+  .footer-wrapper {
+    width: 720px;
+  }
+  .scrollTopButton {
+    display: none;
+  }
+  .articleList {
+  }
+  .article {
+    height: 396px;
+  }
+  .articleText {
+    display: none;
+  }
+  .articleSectionInfo::after {
+    display: none;
+  }
+  .tagsContainer {
+    top: 314px;
+  }
+  .btn-wrapper {
+    width: 100%;
+  }
+  .articleButton {
+    width: 350px;
+    text-align: center;
+  }
+}

@@ -1,14 +1,34 @@
 /* HEADER ------------------------------------------------------------*/
 .header {
-    position: relative;
-    top: -54px;
-    height: 212px;
-    width: 100%;
-    background: url(../../images/spring/top-bg.png) no-repeat;
-  }
-  
-  .logo {
-    position: absolute;
-    top: 75px;
-    left: 0px;
-  }
+  display: flex;
+  justify-content: space-between;
+  height: 212px;
+  width: 100%;
+  background: url(../../images/spring/top-bg.png) no-repeat;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.logo-txt {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 62px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 12px;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}

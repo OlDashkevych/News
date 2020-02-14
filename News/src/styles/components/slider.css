@@ -1,7 +1,6 @@
 /* SLIDESHOW ------------------------------------------------------------*/
 .slider {
   position: relative;
-  top: -44px;
 }
 
 .prev {
@@ -27,7 +26,8 @@
 .slide-frame {
   display: block;
   border: #fff 6px solid;
-  border-radius: 3%;
+  border-radius: 12px;
   height: 337px;
   box-shadow: 0px 0px 34px -6px rgba(0, 0, 0, 0.42);
 }
+

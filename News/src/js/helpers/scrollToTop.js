@@ -1,10 +1,17 @@
 const scrollTopButton = document.querySelector(".scrollTopButton");
 const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
 
-const scrollToTop = () => {
+export const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
+  });
+};
+
+export const scrollToArtList = (behavior, top) => {
+  window.scrollTo({
+    top,
+    behavior
   });
 };
 

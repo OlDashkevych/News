@@ -1,9 +1,5 @@
 /* NAV ------------------------------------------------------------*/
 .navigation {
-  position: relative;
-  top: 102px;
-  right: -588px;
-  z-index: 300;
   width: 326px;
 }
 .navigation__list {

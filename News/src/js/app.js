@@ -1,21 +1,36 @@
 import * as API from "../server/API";
 import articleTmp from "../templates/Article.hbs";
-import mapper from "./mapper";
+import mapper from "./helpers/mapper";
 import spinnerBox from "./spinner/spinner";
-import scrollToTop from "./scrollToTop";
+import "./helpers/scrollToTop";
+import chunkArray from "./helpers/chunkArray";
 
 const articleList = document.querySelector(".articleList");
 
-const fetchArticles = () => {
-  API.getItems()
-    .then(({ data }) => createMarkup(mapper(data.results)))
+export const articlesParams = {
+  page: 0,
+  savedArticles: []
+};
+
+export const fetchArticles = sectionName => {
+  API.getItems(sectionName)
+    .then(({ data }) => {
+      return saveArticles(mapper(data.results));
+    })
+    .then(articles => {
+      createMarkup(articles[articlesParams.page]);
+    })
     .catch(err => console.error(err))
     .finally(() => {
-      spinnerBox.innerHTML = "";
+      spinnerBox.classList.add("hidden");
     });
 };
 
-const createMarkup = articles => {
+const saveArticles = articles =>
+  (articlesParams.savedArticles = chunkArray([...articles], 12));
+
+export const createMarkup = articles => {
+  articleList.innerHTML = "";
   const markup = articles.map(article => articleTmp(article));
   articleList.insertAdjacentHTML("beforeend", markup.join(""));
 };

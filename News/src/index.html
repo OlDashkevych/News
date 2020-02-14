@@ -1,124 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News</title>
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>News</title>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-</head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo-wrapper bounce">
+          <a href="#"><img src="images/logo.png" class="logo "/></a>
+          <span class="logo-txt">newspallet</span>
+        </div>
+        <div class="header-wrapper">
+          <form class="search-form">
+            <input
+              type="text"
+              name="keyword"
+              class="search-input"
+              placeholder="Search..."
+            />
+            <button type="submit" class="submit-btn"></button>
+          </form>
+          <!-- navigation -->
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">CONTACT</a>
+              </li>
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">BLOG</a>
+              </li>
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">GALLERY</a>
+              </li>
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">ABOUT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <!-- slideshow -->
+        <div class="slider">
+          <div class="siema slide-frame">
+            <img src="./slides/01.jpg" />
+            <img src="./slides/02.jpg" />
+            <img src="./slides/03.jpg" />
+          </div>
+          <button class="sliderBtn prev"></button>
+          <button class="sliderBtn next"></button>
+        </div>
+        <div class="section-list-wrapper">
+          <ul class="section-list"></ul>
+        </div>
+        <!-- ==SELECTOR== -->
+        <!-- <select class="select-css">
+          <option>This is a native select element</option>
+          <option>Apples</option>
+          <option>Bananas</option>
+          <option>Grapes</option>
+          <option>Oranges</option>
+        </select> -->
 
-<body>
-  <div class="wrapper">
-    <!-- navigation -->
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list-item "><a class="navigation__list-item-link" href="#">CONTACT</a>
-        </li>
-        <li class="navigation__list-item "><a class="navigation__list-item-link" href="#">BLOG</a></li>
-        <li class="navigation__list-item "><a class="navigation__list-item-link" href="#">GALLERY</a></li>
-        <li class="navigation__list-item "><a class="navigation__list-item-link" href="#">ABOUT</a>
-          <ul class="navigation__sublist">
-            <li class="navigation__sublist-item"><a class="navigation__list-item-link" href="#">Sub page 1</a></li>
-            <li class="navigation__sublist-item"><a class="navigation__list-item-link" href="#">Sub page 2</a></li>
-            <li class="navigation__sublist-item"><a class="navigation__list-item-link" href="#">Sub page 3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <!-- HEADER -->
-    <header class="header">
-      <a href="#"><img src="images/logo.png" class="logo bounce" /></a>
-      <form class="search-form">
-        <input type="text" name="keyword" class="search-input" placeholder="Search..." />
-        <button type="submit" class="submit-btn" />
-      </form>
-    </header>
-    <!-- MAIN -->
-    <main class="main">
-      <!-- slideshow -->
-      <div class="slider">
-        <div class="siema slide-frame">
-          <img src="./slides/01.jpg">
-          <img src="./slides/02.jpg">
-          <img src="./slides/03.jpg">
+        <!-- ENDS slideshow -->
+        <div class="spinnerBox"></div>
+        <h2 class="newsListTitle">The latest news from around the world</h2>
+        <!-- arlicles -->
+        <div>
+          <ul class="articleList"></ul>
         </div>
-        <button class="sliderBtn prev"></button>
-        <button class="sliderBtn next"></button>
-      </div>
-
-
-      <!-- ENDS slideshow -->
-      <div class="spinnerBox"></div>
-      <h2 class="newsListTitle">The latest news from around the world</h2>
-      <!-- arlicles -->
-      <div>
-        <ul class="articleList"></ul>
-      </div>
-      <!-- ENDS articles -->
-    </main>
-    <!-- ENDS MAIN -->
-  </div>
-  <!-- ENDS WRAPPER -->
-  <button class="scrollTopButton"></button>
-  <!-- FOOTER -->
-  <div class="footer">
-    <div class="footer-wrapper">
-      <ul class="follow">
-        <li class="followItem "><span class="footerLinksInfo">Follow us: </span></li>
-        <li class="followItem"><a href="#"><img src="images/twitter.png" alt="" /></a></li>
-        <li class="followItem"><a href="#"><img src="images/facebook.png" alt="" /></a></li>
-        <li class="followItem"><a href="#"><img src="images/linkedln.png" alt="" /></a></li>
-        <li class="followItem"><a href="#"><img src="images/rss.png" alt="" /></a></li>
-      </ul>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <ul class="footer-col-list">
-            <li class="footer-col-list-item "><a class="followLinkTop footer-col-list-item-link" href="#">Skins</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Spring</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
-          </ul>
+        <!-- PaginationBox -->
+        <div class="pagination-container">
+          <button class="pagination-btn prevButton">Prev</button>
+          <button class="pagination-btn pagination-btn-num">
+            <span class="pagination-txt">HOME</span>
+            <span class="arrow-left">&#8249;</span>
+            <span class="pagination-number">1</span>
+          </button>
+          <button class="pagination-btn nextButton">Next</button>
         </div>
-        <div class="footer-col">
-          <ul class="footer-col-list">
-            <li class="footer-col-list-item "><a class=" followLinkTop footer-col-list-item-link" href="#">Gallery</a>
-            </li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Spring</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
-          </ul>
+        <!-- ENDS articles -->
+      </main>
+      <!-- ENDS MAIN -->
+    </div>
+    <!-- ENDS WRAPPER -->
+    <button class="scrollTopButton"></button>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-wrapper">
+        <ul class="follow">
+          <li class="followItem ">
+            <span class="footerLinksInfo">Follow us: </span>
+          </li>
+          <li class="followItem">
+            <a href="#"><img src="images/twitter.png" alt=""/></a>
+          </li>
+          <li class="followItem">
+            <a href="#"><img src="images/facebook.png" alt=""/></a>
+          </li>
+          <li class="followItem">
+            <a href="#"><img src="images/linkedln.png" alt=""/></a>
+          </li>
+          <li class="followItem">
+            <a href="#"><img src="images/rss.png" alt=""/></a>
+          </li>
+        </ul>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class="followLinkTop footer-col-list-item-link" href="#"
+                  >Skins</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class=" followLinkTop footer-col-list-item-link" href="#"
+                  >Gallery</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class="followLinkTop footer-col-list-item-link" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="last footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class="followLinkTop footer-col-list-item-link" href="#"
+                  >Text Styles</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class=" footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-col">
-          <ul class="footer-col-list">
-            <li class="footer-col-list-item "><a class="followLinkTop footer-col-list-item-link" href="#">Blog</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Spring</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
-          </ul>
+        <div class="footer-bottom">
+          <span class="footer-bottom-info">Created by Dashkevych</span>
         </div>
-        <div class="last footer-col">
-          <ul class="footer-col-list">
-            <li class="footer-col-list-item "><a class="followLinkTop footer-col-list-item-link" href="#">Text
-                Styles</a></li>
-            <li class="footer-col-list-item"><a class=" footer-col-list-item-link" href="#">Spring</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Summer</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Autumn</a></li>
-            <li class="footer-col-list-item"><a class="footer-col-list-item-link" href="#">Winter</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span class="footer-bottom-info">Created by Dashkevych</span>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

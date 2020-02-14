@@ -1,10 +1,9 @@
 /* SEARCH ------------------------------------------------------------*/
 .search-form {
-  position: absolute;
-  top: 20px;
-  right: -22px;
-  width: 250px;
+  display: flex;
+  align-items: center;
   height: 50px;
+  width: 230px;
 }
 
 .search-input {
@@ -13,24 +12,23 @@
   font-size: 14px;
   width: 184px;
   height: 30px;
-  margin: 10px 0px 5px 30px;
-  padding: 0px 30px 0px 5px;
-  border: 0;
-  background: url(../../images/search-input.png) no-repeat transparent;
+  padding: 0px 0px 0px 5px;
+  border: 2px #fff solid;
+  border-radius: 8px;
+  background-color: rgb(250, 245, 203);
 }
 
 .submit-btn {
-  position: absolute;
-  top: -2px;
-  right: 20px;
   width: 49px;
   height: 49px;
   border: 0px;
   background: url(../../images/go-button.png) no-repeat transparent;
+  padding: 0;
+  background-position: 50% 0%;
   outline: none;
   cursor: pointer;
 }
 
 .submit-btn:hover {
-  background-position: 0px -49px;
+  background-position: 50% 100%;
 }
