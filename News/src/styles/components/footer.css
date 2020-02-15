@@ -5,6 +5,7 @@
   padding-top: 60px;
   margin-top: 40px;
   background: url(../../images/spring/footer-bg.png) repeat-x #777264 top center;
+  position: relative;
 }
 
 .footerLinksInfo {
@@ -16,7 +17,6 @@
 
 .footer-wrapper {
   position: relative;
-  width: 960px;
   min-height: 200px;
   margin: 0 auto;
   background: url(../../images/bottom-bg.png) no-repeat bottom center;
@@ -27,8 +27,9 @@
   position: absolute;
   width: 260px;
   height: 56px;
-  top: -96px;
-  left: 358px;
+  top: -10px;
+  left: 42%;
+  margin: 0 auto;
   background: url(../../images/follow-bg.png) no-repeat;
   padding: 0;
 }
@@ -41,6 +42,8 @@
 }
 
 .footer-cols {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;

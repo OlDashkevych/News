@@ -4,6 +4,7 @@ import "./js/pagination";
 import "./js/createorSectionList";
 import "./js/fetchSelectedSection";
 import "./js/pagination";
+import "./js/activeBurger";
 
 import "./styles/normalize.css";
 import "./styles/animation.css";

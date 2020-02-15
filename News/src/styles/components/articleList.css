@@ -5,10 +5,10 @@
 }
 /* articleList-----------------------------------------------------------*/
 .newsListTitle {
+  display: block;
   color: #665d4e;
   font-family: "Bebas Neue";
   font-size: 38px;
-  margin-top: 0;
   letter-spacing: 4px;
   margin: 0 auto 12px;
   width: 670px;

@@ -1,15 +1,33 @@
+@media (max-width: 1260px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 968px) {
+  .wrapper {
+    width: 86%;
+  }
+  .footer-col {
+    width: 190px;
+  }
+}
 @media (max-width: 768px) {
   .wrapper {
-    width: 720px;
   }
   .header {
-    background: none;
+  }
+  .logo-txt {
+    margin-top: 20px;
+    font-size: 46px;
+  }
+  .logo-wrapper {
+    flex-direction: column;
   }
   .slider {
     display: none;
   }
   .footer-wrapper {
-    width: 720px;
+    /* width: 720px; */
   }
   .scrollTopButton {
     display: none;
@@ -17,7 +35,7 @@
   .articleList {
   }
   .article {
-    height: 396px;
+    height: 364px;
   }
   .articleText {
     display: none;
@@ -26,13 +44,117 @@
     display: none;
   }
   .tagsContainer {
-    top: 314px;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 290px;
+  }
+  .articleTag {
+    padding: 4px 2px;
   }
   .btn-wrapper {
     width: 100%;
   }
   .articleButton {
-    width: 350px;
+    width: 100%;
     text-align: center;
+  }
+  .footer-col {
+    width: 178px;
+  }
+  .follow {
+    left: 33%;
+  }
+  .newsListTitle {
+    font-size: 24px;
+    width: 480px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    height: 160px;
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 150px;
+    padding: 0;
+    align-items: start;
+  }
+  .logo-txt {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+  .search-form {
+    display: none;
+  }
+  .article {
+    height: 370px;
+  }
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation__list-item-link {
+    border-right: none;
+  }
+  .burger-box {
+    display: block;
+  }
+  .newsListTitle {
+    display: none;
+  }
+  .section-list-wrapper {
+    margin: 0;
+  }
+  .section-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-list-item {
+    height: 34px;
+    width: 50%;
+  }
+  .articleList {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .tagsContainer {
+    display: none;
+  }
+  .pagination-container {
+    width: 100%;
+  }
+  .pagination-btn {
+    width: 80px;
+  }
+  .footer {
+    padding-top: 20px;
+  }
+  .follow {
+    left: 10%;
+  }
+  .footer-cols {
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    width: 136px;
+    min-height: 144px;
+  }
+  .footer-bottom {
+    width: 190px;
+    padding: 0 0 10px;
+  }
+  .navigation {
+    opacity: 0;
+    visibility: hidden;
+    width: 84px;
+  }
+  .visible {
+    visibility: visible;
+    opacity: 1;
   }
 }
