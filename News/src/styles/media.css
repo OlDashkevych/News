@@ -12,10 +12,6 @@
   }
 }
 @media (max-width: 768px) {
-  .wrapper {
-  }
-  .header {
-  }
   .logo-txt {
     margin-top: 20px;
     font-size: 46px;
@@ -26,13 +22,8 @@
   .slider {
     display: none;
   }
-  .footer-wrapper {
-    /* width: 720px; */
-  }
   .scrollTopButton {
     display: none;
-  }
-  .articleList {
   }
   .article {
     height: 364px;
@@ -69,7 +60,7 @@
     width: 480px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 550px) {
   .header {
     height: 160px;
   }

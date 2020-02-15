@@ -9,6 +9,13 @@ export const scrollToTop = () => {
 };
 
 export const scrollToArtList = (behavior, top) => {
+  if (window.innerWidth < 768) {
+    window.scrollTo({
+      top: 130,
+      behavior
+    });
+    return;
+  }
   window.scrollTo({
     top,
     behavior
