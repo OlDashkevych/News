@@ -1,7 +1,10 @@
 <li class="article">
-  <img class="articleImage" src="{{image}}" alt="">
 
-  <h2 class="articleTitle">{{title}}</h2>
+  <a class="headArticleLink" rel="noopener noreferrer" target="_blank" href="{{url}}">
+    <img class="articleImage" src="{{image}}" alt="">
+    <h2 class="articleTitle">{{title}}</h2>
+  </a>
+
 
   <span class="articleSectionInfo">{{section}}</span>
   <p class="articleText">{{abstract}}</p>
@@ -11,5 +14,7 @@
       <a class="articleLink" rel="noopener noreferrer" target="_blank" href="{{url}}"></a>
     </button>
   </div>
-
+  {{!-- <div class="addToStorageButtonBox" title="add to storage">
+    <button class="addToStorageButton" data-type="addToStorageButton" data-articleId={{id}}>&#43;</button>
+  </div> --}}
 </li>

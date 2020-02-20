@@ -27,11 +27,12 @@
   position: absolute;
   width: 260px;
   height: 56px;
-  top: -10px;
-  left: 42%;
   margin: 0 auto;
   background: url(../../images/follow-bg.png) no-repeat;
   padding: 0;
+  top: 18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .followItem {

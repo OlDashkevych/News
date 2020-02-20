@@ -5,7 +5,7 @@ import spinnerBox from "./spinner/spinner";
 import "./helpers/scrollToTop";
 import chunkArray from "./helpers/chunkArray";
 
-const articleList = document.querySelector(".articleList");
+export const articleList = document.querySelector(".articleList");
 
 export const articlesParams = {
   page: 0,

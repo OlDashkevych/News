@@ -1,13 +1,13 @@
 /* NAV ------------------------------------------------------------*/
-.navigation {
-  width: 326px;
-}
 .navigation__list {
+  width: 354px;
   display: flex;
   flex-direction: row-reverse;
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
+  padding: 0;
+  flex-wrap: wrap;
 }
 .navigation__list-item {
   display: block;
@@ -22,6 +22,7 @@
   border-right: 1px solid #665d4e;
   color: #665d4e;
   transition: all 200ms linear;
+  text-transform: uppercase;
 }
 .navigation__sublist {
   display: none;

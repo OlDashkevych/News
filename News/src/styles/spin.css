@@ -42,7 +42,13 @@
     opacity: 1;
   }
 }
-
-.hidden {
-  display: none;
+.spinner-wrapper {
+  position: relative;
 }
+.spinnerBox {
+  position: absolute;
+  left: 50%;
+  top: 120px;
+}
+
+

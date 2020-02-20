@@ -35,16 +35,20 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__list-item ">
-                <a class="navigation__list-item-link" href="#">CONTACT</a>
+                <a class="navigation__list-item-link" href="#">contact</a>
               </li>
               <li class="navigation__list-item ">
-                <a class="navigation__list-item-link" href="#">BLOG</a>
+                <a class="navigation__list-item-link" href="#">blog</a>
               </li>
               <li class="navigation__list-item ">
-                <a class="navigation__list-item-link" href="#">GALLERY</a>
+                <a
+                  class="navigation__list-item-link navigation__list-item-link--seeLate"
+                  href="#"
+                  >see latest</a
+                >
               </li>
               <li class="navigation__list-item ">
-                <a class="navigation__list-item-link" href="#">ABOUT</a>
+                <a class="navigation__list-item-link" href="#">go home</a>
               </li>
             </ul>
           </nav>
@@ -83,33 +87,29 @@
         <div class="section-list-wrapper">
           <ul class="section-list"></ul>
         </div>
-        <!-- ==SELECTOR== -->
-        <!-- <select class="select-css">
-          <option>This is a native select element</option>
-          <option>Apples</option>
-          <option>Bananas</option>
-          <option>Grapes</option>
-          <option>Oranges</option>
-        </select> -->
-
         <!-- ENDS slideshow -->
-        <div class="spinnerBox"></div>
         <h2 class="newsListTitle">The latest news from around the world</h2>
+        <div class="spinner-wrapper"><div class="spinnerBox"></div></div>
         <!-- arlicles -->
-        <div>
+        <div class="articleList-container">
           <ul class="articleList"></ul>
+          <!-- PaginationBox -->
+          <div class="pagination-container">
+            <button class="pagination-btn prevButton">Prev</button>
+            <button class="pagination-btn pagination-btn-num">
+              <span class="pagination-txt">HOME</span>
+              <span class="arrow-left">&#8249;</span>
+              <span class="pagination-number">1</span>
+            </button>
+            <button class="pagination-btn nextButton">Next</button>
+          </div>
         </div>
-        <!-- PaginationBox -->
-        <div class="pagination-container">
-          <button class="pagination-btn prevButton">Prev</button>
-          <button class="pagination-btn pagination-btn-num">
-            <span class="pagination-txt">HOME</span>
-            <span class="arrow-left">&#8249;</span>
-            <span class="pagination-number">1</span>
-          </button>
-          <button class="pagination-btn nextButton">Next</button>
-        </div>
+
         <!-- ENDS articles -->
+        <!-- Saved Art -->
+        <div class="savedArticles-container">
+          <ul class="savedArticles-list"></ul>
+        </div>
       </main>
       <!-- ENDS MAIN -->
     </div>
@@ -228,3 +228,11 @@
     </div>
   </body>
 </html>
+<!-- ==SELECTOR== -->
+<!-- <select class="select-css">
+          <option>This is a native select element</option>
+          <option>Apples</option>
+          <option>Bananas</option>
+          <option>Grapes</option>
+          <option>Oranges</option>
+        </select> -->
