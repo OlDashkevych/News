@@ -35,7 +35,7 @@
     "webpackbar": "^3.1.4"
   },
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "handlebars": "^4.4.3",
     "handlebars-loader": "^1.7.1",
     "nonblockjs": "^1.0.8",
